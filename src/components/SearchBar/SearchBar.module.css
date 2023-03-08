@@ -1,0 +1,7 @@
+.addButton{
+    margin: 2%;
+    background-color: rgb(66, 255, 85);
+    font-weight: bold;
+    border: none;
+    border-radius: 15%;
+}

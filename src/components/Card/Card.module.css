@@ -1,0 +1,33 @@
+.container{
+    display: inline-block;
+    height: 25%;
+    width: 18%;
+    padding: 1em;
+    margin: 2em;
+    background-color: rgb(55, 47, 47, 0.6);
+    border-radius: 15%;
+    box-shadow: 0 0 25px black;
+}
+.xButton{
+    font-weight: bold;
+    float: right;
+    margin: 2%;
+    background-color: rgb(66, 255, 85);
+    border: none;
+    border-radius: 30%;
+}
+
+.imgAvatar{
+    margin: 3%;
+    border-radius: 15%;
+    box-shadow:  0 0 12px #00ff77;
+    box-sizing: content-box;
+    width: 85%;
+}
+
+.cardText{
+    font-size: large;
+    display: inline-flex;
+    margin: 5%;
+    text-shadow:  0 0 12px #00ff77;
+}
