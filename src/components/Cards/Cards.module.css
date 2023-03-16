@@ -1,0 +1,7 @@
+.cardsBox{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: auto;
+    padding: 2em;
+}

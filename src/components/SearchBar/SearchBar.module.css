@@ -1,7 +1,16 @@
-.addButton{
-    margin: 2%;
-    background-color: rgb(66, 255, 85);
-    font-weight: bold;
-    border: none;
-    border-radius: 15%;
+.searchContainer{
+    width: 20%;
+    margin-right: 3em;
+}
+
+.searchButton{
+    background-color: #c6e5db;
+    border: 0px;
+    border-radius: 0px 15px 15px 0px; 
+}
+
+.searchInput{
+    background-color: #c6e5db;
+    border: 0px;
+    border-radius: 15px 0px 0px 15px;
 }

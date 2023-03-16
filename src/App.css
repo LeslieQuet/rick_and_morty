@@ -1,3 +1,14 @@
+@font-face {
+   font-family: rickAndMorty;
+   src: url(./assets/fonts/get_schwifty.ttf);
+}
+
 .App {
+   height: auto;
    text-align: center;
+   padding: '25px';
+   background-image: url("./assets/img/background.jpg");
+   background-attachment: fixed;
+   background-repeat: 'no-repeat';
+   background-size:cover;
 }
