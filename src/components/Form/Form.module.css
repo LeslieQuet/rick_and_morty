@@ -1,13 +1,11 @@
 .container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: auto;
-    /* min-height: 310px; */
-    width: fit-content;
-    min-width: 110px;
-    padding: 1em;
-    margin: 2em;
+    background-color: aquamarine;
+    justify-self: center;
+    /* position: relative;
+    top: 40vh;
+    left: 40vh; */
+    margin: 2vh;
+    padding: 2vh;
     background-color: rgb(55, 47, 47, 0.4);
     border-radius: 15%;
     box-shadow: 10px 11px 22px 2px rgba(0, 0, 0, 0.75);
@@ -19,9 +17,10 @@
 }
 
 .xButton{
-    float: right;
+    justify-self: center;
     border: none;
-    margin: 0 10px;
+    margin: 15px;
+    padding: 10px;
     width: fit-content;
     height: fit-content;
     background-color: #00ff77; /* rgb(66, 255, 85);*/
@@ -30,32 +29,15 @@
     transition: 0.5s;
 }
 
+.searchInput{
+    border: 0px;
+    border-radius: 15px; 
+    height: 3vh;
+    margin: 5px;
+}
+
 .xButton:hover{
     cursor: pointer;
     background-color: rgb(79, 255, 66);
     box-shadow: 6px 7px 22px -3px rgba(0,0,0,0.72);
 }
-
-.cardText{
-    font-family: shadowsInto;
-    font-size: 3vh;;
-    display: inline-flexbox;
-}
-
-.cardTitle{
-    color: black;
-    text-decoration: none;
-    font-family: shadowsInto;
-    font-size: 5vh;;
-}
-
-.imgAvatar{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15%;
-    box-shadow: 0px 0px 48px 23px rgba(0,255,119,0.75);
-    box-sizing: content-box;
-    width: 80%;
-}
-

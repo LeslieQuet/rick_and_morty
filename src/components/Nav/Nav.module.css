@@ -1,8 +1,0 @@
-.navBar{
-    background-color: #00ff77;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 0.5em;
-    margin-bottom: 3em;
-}

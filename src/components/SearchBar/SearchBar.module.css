@@ -1,16 +1,21 @@
 .searchContainer{
-    width: 20%;
-    margin-right: 3em;
+    width: max-content;
+    padding: 15px;
+    margin: 0px;
 }
 
 .searchButton{
-    background-color: #c6e5db;
+    font-family:'Lucida Sans', 'Lucida Sans Regular'; 
+    width: fit-content;
+    background-color: white;
+    cursor: pointer;
     border: 0px;
     border-radius: 0px 15px 15px 0px; 
+    height: 6vh;
 }
 
 .searchInput{
-    background-color: #c6e5db;
     border: 0px;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0px 0px 15px; 
+    height: 6vh;
 }

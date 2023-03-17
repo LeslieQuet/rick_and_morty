@@ -1,7 +1,14 @@
+/* .cardsContainer {
+    display: block;
+} */
+
 .cardsBox{
-    display: flex;
-    flex-direction: row;
-    width: 85%;
-    margin: auto;
+    /* display: none; */
+    display: grid;
+    grid-column-end: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    max-width: 90%;
     padding: 2em;
 }
