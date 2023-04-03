@@ -1,4 +1,4 @@
-import style from '../Form/Form.module.css'
+import style from './Form.module.css'
 import { useState } from "react";
 import validation from "./Validation.js";
 
