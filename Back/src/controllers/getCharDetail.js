@@ -1,24 +1,26 @@
-// const axios = require('axios');
-// const URL = "https://be-a-rym.up.railway.app/api";
-// const KEY = "0976a66d7e82.e06bb0df0c2f8fbac366";
+//Integración 05.Express//
 
-// const getCharDetail = (req, res)=>{
-//     const {id} = req.params;
-//     //Esto se puede modularizar aún más creando la cb de then por fuera
-//     axios
-//         .get(`${URL}/character/${id}?key=${KEY}`)
-//         .then ((response) => {
-//             const {id, name, gender, species, origin, status, image} = response.data;
-//             res.status(200).json({id, name, gender, species, origin, status, image});
-//     })
-//       .catch(err => {
-//         res.status(500).json({error: err.message});
-//     });
-// }
+const axios = require('axios');
+const URL = "https://be-a-rym.up.railway.app/api";
+const KEY = "0976a66d7e82.e06bb0df0c2f8fbac366";
 
-// module.exports = getCharDetail;
+const getCharDetail = (req, res)=>{
+    const {id} = req.params;
+    //Esto se puede modularizar más creando la cb de then por fuera
+    axios
+        .get(`${URL}/character/${id}?key=${KEY}`)
+        .then ((response) => {
+            const {id, name, gender, species, origin, status, image} = response.data;
+            res.status(200).json({id, name, gender, species, origin, status, image});
+    })
+      .catch(err => {
+        res.status(500).json({error: err.message});
+    });
+}
 
-//HW Integration de 03.Promises
+module.exports = getCharDetail;
+
+//Integración 03.Promises
 // const axios = require("axios");
 
 // const getCharDetail = (res, id)=>{
@@ -34,4 +36,3 @@
 // }
 
 // module.exports= getCharDetail;
-//Acá comienza la integration de 05.Express//

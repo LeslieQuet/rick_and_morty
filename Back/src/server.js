@@ -1,17 +1,18 @@
-// const express = require('express');
-// //Cuando hagamos el despliegue del servidor el servicio que lo hostee va a tener un puerto y lo agregamos al puerto: const PORT = proces.env.PORT || 3001;
-// const PORT = 3001;
-// //Se importa el index por default
-// const router = require('./routes');
+const express = require('express');
+const server = express();
+//Cuando hagamos el despliegue del servidor el servicio que lo hostee va a tener un puerto y lo agregamos al puerto: const PORT = proces.env.PORT || 3001;
+const PORT = 3001;
 
-// const server = express();
-// server.use(router);
+//Se importa el index por default
+const router = require('./routes');
 
-// server.listen(PORT, () => {
-//    console.log('Server raised in port ' + PORT);
-// });
+server.use(router);
 
-//HW integración 02 Web Server (eliminé el archivo data)//
+server.listen(PORT, () => {
+   console.log('Server raised in port ' + PORT);
+});
+
+//Integración 02 Web Server - Servidor con Node puro (eliminado el archivo data)//
 // var http = require("http");
 // var data = require('./utils/data')
 
@@ -35,7 +36,7 @@
 // }).listen(PORT, 'localhost');
 
 
-//HW Integration de 03.Promises
+//Integration 03.Promises
 // var http = require("http");
 // const PORT = 3001;
 // const getCharById = require("./controllers/getCharById");
